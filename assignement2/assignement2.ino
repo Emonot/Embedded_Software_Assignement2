@@ -74,7 +74,8 @@ void task4(){
 
 //we calculate the average of the last 4 reads of the potentiometer
 void task5(){
-  
+
+  //FIFO list to gather all last potentiometer values
   all_potentiometer_t5[3] = all_potentiometer_t5[2];
   all_potentiometer_t5[2] = all_potentiometer_t5[1];
   all_potentiometer_t5[1] = all_potentiometer_t5[0];
