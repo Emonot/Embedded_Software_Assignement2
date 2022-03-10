@@ -19,18 +19,18 @@ ID : H00385163
 
 //we declare our variable and constant (t* correspond to the task where the variable has been used)
 
-int input_Btn_t2 = 0; //state of the button we read
+bool input_Btn_t2 = 0; //state of the button we read
 
 float frequency_measured_t3;
 unsigned long actualTime = micros();//we use micros to check the current time in microseconds
 unsigned long passedTime = micros();
 
-int input_potentiometer_t4 = 0; //value of the potentiometer
+unsigned short input_potentiometer_t4 = 0; //value of the potentiometer
 
-int all_potentiometer_t5[4] = {0,0,0,0}; //array that will received the last 4 values of our potentiometer
-int average_potentiometer_t5 = 0; //value that will contains the average of the last 4 read of the potentiometer
+unsigned short all_potentiometer_t5[4] = {0,0,0,0}; //array that will received the last 4 values of our potentiometer
+unsigned short average_potentiometer_t5 = 0; //value that will contains the average of the last 4 read of the potentiometer
 
-const int max_potentiometer_t7 = 4095; //max value we can get from our potentiometer
+const short max_potentiometer_t7 = 4095; //max value we can get from our potentiometer
 bool error_code_t7 = 0; //error_code depending on the value we read on the potentiometer
 
 Ticker periodicTicker; //our ticker object
